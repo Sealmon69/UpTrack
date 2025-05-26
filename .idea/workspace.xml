@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adapter/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/sebamuel/uptrack/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/resources/org/uptrack/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +147,7 @@
       <workItem from="1748011837763" duration="4337000" />
       <workItem from="1748200296974" duration="602000" />
       <workItem from="1748276589836" duration="2311000" />
-      <workItem from="1748286582635" duration="4154000" />
+      <workItem from="1748286582635" duration="4520000" />
     </task>
     <servers />
   </component>
