@@ -1,4 +1,4 @@
-package org.sebamuel.uptrack;
+package org.uptrack;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

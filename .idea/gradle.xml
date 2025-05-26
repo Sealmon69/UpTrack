@@ -8,6 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/adapter" />
+            <option value="$PROJECT_DIR$/application" />
+            <option value="$PROJECT_DIR$/plugin" />
           </set>
         </option>
       </GradleProjectSettings>

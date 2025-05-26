@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.14'
+}
+
+group = 'org.uptrack'
+version = '1.0-SNAPSHOT'
+
+javafx {
+    version = '20.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+    // Passe den Pfad zu deiner Main-Klasse an:
+    mainClassName = 'org.uptrack.MainApp'
+}
+
+dependencies {
+    // Plugin-Schicht hängt von Adapter-Schicht ab
+    implementation project(':adapter')
+
+    // Optional: Logging, z. B. SLF4J/Logback
+    // implementation 'ch.qos.logback:logback-classic:1.4.14'
+
+    // Optional: JavaFX-spezifische Bibliotheken
+    // implementation 'org.controlsfx:controlsfx:11.1.2'
+}

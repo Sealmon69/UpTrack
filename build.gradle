@@ -1,25 +1,26 @@
-plugins {
-    id 'java'
-    id 'org.openjfx.javafxplugin' version '0.0.14'
+allprojects {
+    group = 'org.uptrack'
+    version = '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
 }
 
-group = 'org.example'
-version = '1.0-SNAPSHOT'
+subprojects {
+    apply plugin: 'java'
 
-repositories {
-    mavenCentral()
-}
+    java {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
 
-dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-}
+    test {
+        useJUnitPlatform()
+    }
 
-javafx {
-    version = '20.0.2'
-    modules = ['javafx.controls', 'javafx.fxml']
-}
-
-test {
-    useJUnitPlatform()
+    dependencies {
+        testImplementation platform('org.junit:junit-bom:5.10.0')
+        testImplementation 'org.junit.jupiter:junit-jupiter'
+    }
 }

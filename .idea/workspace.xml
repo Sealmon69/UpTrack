@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/sebamuel/uptrack/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sebamuel/uptrack/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/sebamuel/uptrack/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/resources/org/uptrack/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="module-info" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,10 +70,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Gradle.Build UpTrack.executor": "Run",
     "Gradle.UpTrack [:org.sebamuel.uptrack.HelloApplication.main()].executor": "Run",
+    "Gradle.UpTrack.executor": "Run",
+    "Gradle.UpTrack:plugin [:plugin:org.uptrack.MainApp.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Samuel/IdeaProjects/UpTrack/plugin/src/main/resources/org/uptrack",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,9 +92,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin\src\main\resources\org\uptrack" />
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin\src\main\java\org\uptrack" />
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin\src\main\java\resources" />
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin\src\main\java\sebamuel" />
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\adapter\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.sebamuel.uptrack.HelloApplication" />
+      <module name="UpTrack.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.sebamuel.uptrack.*" />
@@ -129,11 +157,28 @@
       <workItem from="1745423629696" duration="10000" />
       <workItem from="1745423648676" duration="4000" />
       <workItem from="1745424131109" duration="84000" />
-      <workItem from="1745481755832" duration="1522000" />
+      <workItem from="1745481755832" duration="2637000" />
+      <workItem from="1745502192609" duration="1361000" />
+      <workItem from="1747754331482" duration="5056000" />
+      <workItem from="1748011837763" duration="4337000" />
+      <workItem from="1748200296974" duration="602000" />
+      <workItem from="1748276589836" duration="2311000" />
+      <workItem from="1748286582635" duration="4154000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
