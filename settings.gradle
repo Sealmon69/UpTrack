@@ -3,3 +3,5 @@ rootProject.name = "UpTrack"
 include 'application'
 include 'adapter'
 include 'plugin'
+include 'domain'
+

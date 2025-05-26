@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.uptrack.DashboardController"
+            prefHeight="600.0" prefWidth="800.0">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="20.0" style="-fx-background-color: #f0f0f0;">
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+            </padding>
+            <Label text="UpTrack Dashboard" style="-fx-font-weight: bold;">
+                <font>
+                    <Font size="24.0"/>
+                </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="usernameLabel" text="Angemeldet als: "/>
+            <Button fx:id="logoutButton" text="Abmelden" onAction="#handleLogout"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+                <Label text="Benutzerverwaltung" style="-fx-font-weight: bold;">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS"/>
+                <TextField fx:id="searchField" promptText="Suchen..."/>
+                <Button fx:id="searchButton" text="Suchen" onAction="#handleSearch"/>
+                <Button fx:id="userCreate" text="Neuer Benutzer" onAction="#handleNewUser"/>
+            </HBox>
+
+            <TableView fx:id="userTableView" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="usernameColumn" text="Benutzername" prefWidth="150.0"/>
+                    <TableColumn fx:id="userTypeColumn" text="Benutzertyp" prefWidth="100.0"/>
+                    <TableColumn fx:id="statusColumn" text="Status" prefWidth="100.0"/>
+                    <TableColumn fx:id="actionsColumn" text="Aktionen" prefWidth="200.0"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10.0" style="-fx-background-color: #f0f0f0;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <Label fx:id="statusLabel" text="Bereit"/>
+        </HBox>
+    </bottom>
+</BorderPane>

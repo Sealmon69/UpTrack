@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="" />
+    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/UserControllerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/UserViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapter/src/main/resources/org/uptrack/Dashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/uptrack/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/uptrack/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/src/main/resources/org/uptrack/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +52,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="module-info" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,6 +80,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "liberica-full-21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Samuel/IdeaProjects/UpTrack/plugin/src/main/resources/org/uptrack",
     "node.js.detected.package.eslint": "true",
@@ -69,9 +88,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
@@ -147,7 +166,7 @@
       <workItem from="1748011837763" duration="4337000" />
       <workItem from="1748200296974" duration="602000" />
       <workItem from="1748276589836" duration="2311000" />
-      <workItem from="1748286582635" duration="4520000" />
+      <workItem from="1748286582635" duration="6201000" />
     </task>
     <servers />
   </component>
