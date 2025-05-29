@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService {
-    private final Repository repository;
+    private final UserRepository repository;
 
-    public UserService() {
-        this.repository = new Repository();
+    public UserService(UserRepository repository) {
+        this.repository = repository;
     }
 
     public void registerUser(String username, String password) {

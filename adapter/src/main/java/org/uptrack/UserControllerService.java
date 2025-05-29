@@ -8,7 +8,7 @@ public class UserControllerService {
     private final ObservableList<UserViewModel> userViewModels = FXCollections.observableArrayList();
 
     public UserControllerService() {
-        this.userService = new UserService();
+        this.userService = new UserService(new Repository());
     }
 
     public ObservableList<UserViewModel> getUserViewModels() {

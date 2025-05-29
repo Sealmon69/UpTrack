@@ -5,31 +5,38 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Repository {
-    private final Map<String, User> users = new HashMap<>();
+public class Repository implements UserRepository {
+    private Map<String, User> users;
 
     public Repository() {
-        // Beispieldaten initialisieren
-        User admin = new Admin("admin", "admin123");
-        users.put(admin.getUsername(), admin);
+        users = new HashMap<>();
+        // Initialisiere mit Admin-Benutzer
+        users.put("admin", new Admin("admin", "password"));
     }
 
+    @Override
     public void addUser(User user) {
         users.put(user.getUsername(), user);
     }
 
+    @Override
     public User getUserByUsername(String username) {
         return users.get(username);
     }
 
+    @Override
     public List<User> getAllUsers() {
         return new ArrayList<>(users.values());
     }
 
+    @Override
     public void updateUser(User user) {
-        users.put(user.getUsername(), user);
+        if (users.containsKey(user.getUsername())) {
+            users.put(user.getUsername(), user);
+        }
     }
 
+    @Override
     public void deleteUser(String username) {
         users.remove(username);
     }

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="WindowInitializer added">
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/RecordHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Tasks.java" afterDir="false" />
+    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="Tasks and RecordHistory added">
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/org/uptrack/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/UserControllerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/UserControllerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/uptrack/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/uptrack/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/org/uptrack/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/org/uptrack/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
         <option value="module-info" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -176,7 +177,7 @@
       <workItem from="1748276589836" duration="2311000" />
       <workItem from="1748286582635" duration="7227000" />
       <workItem from="1748460758858" duration="11004000" />
-      <workItem from="1748506384411" duration="12148000" />
+      <workItem from="1748506384411" duration="12807000" />
     </task>
     <task id="LOCAL-00001" summary="WindowInitializer added">
       <option name="closed" value="true" />
@@ -186,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748526394844</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tasks and RecordHistory added">
+      <option name="closed" value="true" />
+      <created>1748552777579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748552777579</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +214,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="WindowInitializer added" />
-    <option name="LAST_COMMIT_MESSAGE" value="WindowInitializer added" />
+    <MESSAGE value="Tasks and RecordHistory added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks and RecordHistory added" />
   </component>
 </project>
