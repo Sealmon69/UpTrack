@@ -43,8 +43,8 @@ public class DashboardController {
     @FXML
     private Label statusLabel;
 
-    public DashboardController() {
-        this.userControllerService = new UserControllerService();
+    public DashboardController(UserControllerService userControllerService) {
+        this.userControllerService = userControllerService;
     }
 
     @FXML
