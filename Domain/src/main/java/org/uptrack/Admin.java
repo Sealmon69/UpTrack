@@ -29,8 +29,4 @@ public class Admin implements User {
         this.password = password;
     }
 
-    @Override
-    public void login() {
-        System.out.println("Admin " + username + " logged in.");
-    }
 }

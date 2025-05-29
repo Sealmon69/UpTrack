@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/WindowInitializer.java" afterDir="false" />
+    <list default="true" id="1d817b11-019a-406f-8b55-0179d6795568" name="Changes" comment="WindowInitializer added">
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/RecordHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Tasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/adapter/src/main/java/org/uptrack/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/plugin/src/main/java/org/uptrack/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/src/main/java/org/uptrack/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,31 +59,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build UpTrack.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UpTrack [:org.sebamuel.uptrack.HelloApplication.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UpTrack.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UpTrack:plugin [:plugin:org.uptrack.MainApp.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;liberica-full-21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samuel/IdeaProjects/UpTrack/plugin/src/main/resources/org/uptrack&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Gradle.Build UpTrack.executor": "Run",
+    "Gradle.UpTrack [:org.sebamuel.uptrack.HelloApplication.main()].executor": "Run",
+    "Gradle.UpTrack.executor": "Run",
+    "Gradle.UpTrack:plugin [:plugin:org.uptrack.MainApp.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "liberica-full-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Samuel/IdeaProjects/UpTrack/plugin/src/main/resources/org/uptrack",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Samuel\IdeaProjects\UpTrack\plugin\src\main\resources\org\uptrack" />
@@ -170,8 +176,17 @@
       <workItem from="1748276589836" duration="2311000" />
       <workItem from="1748286582635" duration="7227000" />
       <workItem from="1748460758858" duration="11004000" />
-      <workItem from="1748506384411" duration="2066000" />
+      <workItem from="1748506384411" duration="12148000" />
     </task>
+    <task id="LOCAL-00001" summary="WindowInitializer added">
+      <option name="closed" value="true" />
+      <created>1748526394844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748526394844</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,5 +202,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="WindowInitializer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="WindowInitializer added" />
   </component>
 </project>

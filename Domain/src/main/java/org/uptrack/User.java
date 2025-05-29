@@ -5,6 +5,5 @@ public interface User {
     void setUsername(String username);
     String getPassword();
     void setPassword(String password);
-    void login();
 
 }
