@@ -43,6 +43,9 @@ public class DashboardController {
     @FXML
     private Label statusLabel;
 
+    @FXML
+    private TextArea notesTextArea;
+
     public DashboardController(UserControllerService userControllerService) {
         this.userControllerService = userControllerService;
     }
@@ -125,5 +128,11 @@ public class DashboardController {
         // In einer echten Anwendung würde hier eine Bestätigung angefordert werden
         userControllerService.deleteUser(user);
         statusLabel.setText("Benutzer wurde gelöscht: " + user.getUsername());
+    }
+
+    @FXML
+    public void saveNotes() {
+        // Code zum Speichern der Notizen
+        statusLabel.setText("Notizen gespeichert");
     }
 }

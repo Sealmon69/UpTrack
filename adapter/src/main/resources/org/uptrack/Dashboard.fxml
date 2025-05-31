@@ -50,6 +50,16 @@
                     <TableColumn fx:id="actionsColumn" text="Aktionen" prefWidth="200.0"/>
                 </columns>
             </TableView>
+            <VBox spacing="5">
+                <Label text="Notizen" style="-fx-font-weight: bold;"/>
+                <TextArea fx:id="notesTextArea"
+                          promptText="Notizen hier eingeben..."
+                          wrapText="true"
+                          prefHeight="100.0"
+                          VBox.vgrow="ALWAYS"/>
+                <Button text="Notizen speichern" onAction="#saveNotes"
+                        alignment="CENTER_RIGHT"/>
+            </VBox>
         </VBox>
     </center>
 
