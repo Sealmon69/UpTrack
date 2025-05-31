@@ -11,8 +11,8 @@ public class UserService {
     }
 
     public void registerUser(String username, String password) {
-        // Validierung und Logik zur Benutzerregistrierung
-        System.out.println("Benutzer " + username + " erfolgreich registriert.");
+        User newUser = new Admin(username, password); // oder anderen Benutzertyp
+        repository.addUser(newUser);
     }
 
     public void loginUser(String username, String password) {
@@ -26,11 +26,7 @@ public class UserService {
     }
 
     public List<User> getAllUsers() {
-        // In einer realen Implementierung würden wir Benutzer aus dem Repository abrufen
-        List<User> users = new ArrayList<>();
-        users.add(new Admin("admin", "password"));
-        // Weitere Benutzer aus dem Repository hinzufügen
-        return users;
+        return repository.getAllUsers();
     }
 
     public List<User> searchUsers(String searchTerm) {
@@ -48,8 +44,7 @@ public class UserService {
     }
 
     public void deleteUser(String username) {
-        // Logik zum Löschen eines Benutzers
-        System.out.println("Benutzer " + username + " wurde gelöscht.");
+        repository.deleteUser(username);
     }
 
     public void updateUser(String username, String newPassword) {

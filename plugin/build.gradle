@@ -22,9 +22,5 @@ dependencies {
     implementation project(':adapter')
     implementation project(':domain')
 
-    // Optional: Logging, z. B. SLF4J/Logback
-    // implementation 'ch.qos.logback:logback-classic:1.4.14'
-
-    // Optional: JavaFX-spezifische Bibliotheken
-    // implementation 'org.controlsfx:controlsfx:11.1.2'
 }
+
