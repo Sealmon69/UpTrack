@@ -1,3 +1,7 @@
+plugins {
+    id 'jacoco'
+}
+
 allprojects {
     group = 'org.uptrack'
     version = '1.0-SNAPSHOT'
@@ -9,10 +13,30 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'jacoco'
 
     java {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    jacoco {
+        toolVersion = "0.8.10"
+    }
+
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events "passed", "skipped", "failed"
+        }
+        finalizedBy jacocoTestReport
+    }
+
+    jacocoTestReport {
+        reports {
+            xml.required = true
+            html.required = true
+        }
     }
 
     dependencies {
@@ -23,12 +47,17 @@ subprojects {
         testImplementation 'org.mockito:mockito-core:5.3.1'
         testImplementation 'org.mockito:mockito-junit-jupiter:5.3.1'
     }
+}
 
-    test {
-        useJUnitPlatform()
-        testLogging {
-            events "passed", "skipped", "failed"
-        }
+task jacocoRootReport(type: JacocoReport) {
+    dependsOn = subprojects.test
+    additionalSourceDirs.from = files(subprojects.sourceSets.main.allSource.srcDirs)
+    sourceDirectories.from = files(subprojects.sourceSets.main.allSource.srcDirs)
+    classDirectories.from = files(subprojects.sourceSets.main.output)
+    executionData.from = files(subprojects.jacocoTestReport.executionData)
+
+    reports {
+        html.required = true
+        xml.required = true
     }
-
 }

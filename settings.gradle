@@ -4,6 +4,4 @@ include 'application'
 include 'adapter'
 include 'plugin'
 include 'domain'
-include 'Domain:src:main:test'
-findProject(':Domain:src:main:test')?.name = 'test'
 
