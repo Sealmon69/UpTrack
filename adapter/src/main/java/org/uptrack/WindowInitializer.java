@@ -4,11 +4,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class WindowInitializer {
+    private static final Logger logger = LoggerFactory.getLogger(WindowInitializer.class);
+
     public static final String dashboardFxml = "Dashboard.fxml";
     public static final String fxmlPath = "org/uptrack/";
 
@@ -29,8 +33,8 @@ public class WindowInitializer {
             stage.setScene(scene);
             return stage;
         } catch (IOException e) {
-            e.printStackTrace();
-            return null;
+            logger.error("Fehler beim Laden des Dashboards", e);
+            throw new RuntimeException("Dashboard konnte nicht geladen werden", e);
         }
     }
 }
